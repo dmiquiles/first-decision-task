@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import daniel.miquiles.desafiofirstdecisionbackend.Dto.UsuarioRequestDTO;
 import daniel.miquiles.desafiofirstdecisionbackend.Dto.UsuarioResponseDTO;
-import daniel.miquiles.desafiofirstdecisionbackend.Models.Usuario;
 import daniel.miquiles.desafiofirstdecisionbackend.Services.UsuarioService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
