@@ -9,7 +9,6 @@ import org.springframework.validation.annotation.Validated;
 import daniel.miquiles.desafiofirstdecisionbackend.Dto.UsuarioRequestDTO;
 import daniel.miquiles.desafiofirstdecisionbackend.Dto.UsuarioResponseDTO;
 import daniel.miquiles.desafiofirstdecisionbackend.Exceptions.SenhasNaoCoincidem;
-import daniel.miquiles.desafiofirstdecisionbackend.Models.Usuario;
 import daniel.miquiles.desafiofirstdecisionbackend.Repositories.UsuarioRepository;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
