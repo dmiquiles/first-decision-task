@@ -10,21 +10,21 @@ import lombok.Getter;
 
 @Getter
 public class UsuarioRequestDTO {
-    @NotBlank(message = "{nome.not.blank}")
-    @Length(min = 3, max = 50)
+    @NotBlank(message = "O nome não pode ser nulo")
+    @Length(min = 3, max = 50, message = "O nome deverá ter no minimo {min} e no máximo {max} caracteres")
     @Column(length = 51, nullable = false)
     private String nome;
     
-    @NotBlank(message = "{email.not.blank}")
-    @Email(message = "{email.not.valid}")
+    @NotBlank(message = "O email não pode ser nulo")
+    @Email(message = "Informe um email válido")
     private String email;
 
-    @NotBlank(message = "{senha.not.blank}")
-    @Length(min = 6, max = 20, message = "O nome deverá ter no minimo {min} e no máximo {max} caracteres")
+    @NotBlank(message = "A senha não pode ser nula")
+    @Length(min = 6, max = 20, message = "A senha deverá ter no minimo {min} e no máximo {max} caracteres")
     @Column(length = 51, nullable = false)
     private String senha;
 
-    @NotBlank(message = "{confirmacao.not.blank}")
+    @NotBlank(message = "A confirmação não pode ser nula")
     @Length(min = 6, max = 20, message = "O nome deverá ter no minimo {min} e no máximo {max} caracteres")
     @Column(length = 51, nullable = false)
     private String confirmacao;

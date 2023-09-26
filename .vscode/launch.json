@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DesafioFirstDecisionBackEndApplication<desafio-first-decision-back-end>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "daniel.miquiles.desafiofirstdecisionbackend.DesafioFirstDecisionBackEndApplication",
+            "projectName": "desafio-first-decision-back-end",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
