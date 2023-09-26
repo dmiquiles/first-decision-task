@@ -1,4 +1,4 @@
-package daniel.miquiles.firstbackend.Controllers;
+package daniel.miquiles.desafiofirstdecisionbackend.Controllers;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import daniel.miquiles.firstbackend.Exceptions.ErrorObject;
-import daniel.miquiles.firstbackend.Exceptions.ErrorResponse;
-import daniel.miquiles.firstbackend.Exceptions.SenhasNaoCoincidem;
+import daniel.miquiles.desafiofirstdecisionbackend.Exceptions.ErrorObject;
+import daniel.miquiles.desafiofirstdecisionbackend.Exceptions.ErrorResponse;
+import daniel.miquiles.desafiofirstdecisionbackend.Exceptions.SenhasNaoCoincidem;
 
 @RestControllerAdvice
 public class ApplicationControllerAdvice {

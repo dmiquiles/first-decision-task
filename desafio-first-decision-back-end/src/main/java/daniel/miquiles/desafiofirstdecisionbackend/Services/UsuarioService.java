@@ -1,15 +1,16 @@
-package daniel.miquiles.firstbackend.Services;
+package daniel.miquiles.desafiofirstdecisionbackend.Services;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import daniel.miquiles.firstbackend.Dto.UsuarioRequestDTO;
-import daniel.miquiles.firstbackend.Dto.UsuarioResponseDTO;
-import daniel.miquiles.firstbackend.Exceptions.SenhasNaoCoincidem;
-import daniel.miquiles.firstbackend.Repositories.UsuarioRepository;
+import daniel.miquiles.desafiofirstdecisionbackend.Dto.UsuarioRequestDTO;
+import daniel.miquiles.desafiofirstdecisionbackend.Dto.UsuarioResponseDTO;
+import daniel.miquiles.desafiofirstdecisionbackend.Exceptions.SenhasNaoCoincidem;
+import daniel.miquiles.desafiofirstdecisionbackend.Repositories.UsuarioRepository;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -20,6 +21,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class UsuarioService {
 
+	@Autowired
     private final UsuarioRepository usuarioRepository;
 
     public List<UsuarioResponseDTO> listar() {

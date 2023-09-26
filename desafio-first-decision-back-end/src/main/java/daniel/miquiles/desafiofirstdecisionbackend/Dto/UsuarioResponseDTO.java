@@ -1,6 +1,6 @@
-package daniel.miquiles.firstbackend.Dto;
+package daniel.miquiles.desafiofirstdecisionbackend.Dto;
 
-import daniel.miquiles.firstbackend.Models.Usuario;
+import daniel.miquiles.desafiofirstdecisionbackend.Models.Usuario;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

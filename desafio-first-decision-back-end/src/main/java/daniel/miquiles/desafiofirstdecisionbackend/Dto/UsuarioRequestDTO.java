@@ -1,14 +1,18 @@
-package daniel.miquiles.firstbackend.Dto;
+package daniel.miquiles.desafiofirstdecisionbackend.Dto;
 
 import org.hibernate.validator.constraints.Length;
 
-import daniel.miquiles.firstbackend.Models.Usuario;
+import daniel.miquiles.desafiofirstdecisionbackend.Models.Usuario;
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class UsuarioRequestDTO {
     @NotBlank(message = "O nome não pode ser nulo")
     @Length(min = 3, max = 50, message = "O nome deverá ter no minimo {min} e no máximo {max} caracteres")

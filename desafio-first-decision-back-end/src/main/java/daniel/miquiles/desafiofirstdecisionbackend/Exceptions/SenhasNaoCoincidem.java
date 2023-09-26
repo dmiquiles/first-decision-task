@@ -1,4 +1,4 @@
-package daniel.miquiles.firstbackend.Exceptions;
+package daniel.miquiles.desafiofirstdecisionbackend.Exceptions;
 
 public class SenhasNaoCoincidem extends RuntimeException{
 

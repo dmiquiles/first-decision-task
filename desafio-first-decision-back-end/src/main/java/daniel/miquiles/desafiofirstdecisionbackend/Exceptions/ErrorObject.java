@@ -1,4 +1,4 @@
-package daniel.miquiles.firstbackend.Exceptions;
+package daniel.miquiles.desafiofirstdecisionbackend.Exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,7 +7,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public class ErrorObject {
 
-    private final String message;
+	private final String message;
     private final String field;
     private final Object parameter;
     
