@@ -1,4 +1,4 @@
-package daniel.miquiles.desafiofirstdecisionbackend.Models;
+package daniel.miquiles.firstbackend.Models;
 
 
 import jakarta.persistence.Column;

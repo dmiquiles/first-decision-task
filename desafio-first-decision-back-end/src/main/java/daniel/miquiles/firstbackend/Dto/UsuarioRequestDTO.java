@@ -1,8 +1,8 @@
-package daniel.miquiles.desafiofirstdecisionbackend.Dto;
+package daniel.miquiles.firstbackend.Dto;
 
 import org.hibernate.validator.constraints.Length;
 
-import daniel.miquiles.desafiofirstdecisionbackend.Models.Usuario;
+import daniel.miquiles.firstbackend.Models.Usuario;
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

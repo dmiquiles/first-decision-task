@@ -1,4 +1,4 @@
-package daniel.miquiles.desafiofirstdecisionbackend;
+package daniel.miquiles.firstbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

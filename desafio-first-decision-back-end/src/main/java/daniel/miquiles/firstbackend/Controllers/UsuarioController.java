@@ -1,4 +1,4 @@
-package daniel.miquiles.desafiofirstdecisionbackend.Controllers;
+package daniel.miquiles.firstbackend.Controllers;
 
 import java.util.List;
 
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import daniel.miquiles.desafiofirstdecisionbackend.Dto.UsuarioRequestDTO;
-import daniel.miquiles.desafiofirstdecisionbackend.Dto.UsuarioResponseDTO;
-import daniel.miquiles.desafiofirstdecisionbackend.Services.UsuarioService;
+import daniel.miquiles.firstbackend.Dto.UsuarioRequestDTO;
+import daniel.miquiles.firstbackend.Dto.UsuarioResponseDTO;
+import daniel.miquiles.firstbackend.Services.UsuarioService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 
