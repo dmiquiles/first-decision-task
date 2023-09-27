@@ -1,0 +1,55 @@
+<form [formGroup]="form">
+    
+    <mat-form-field>
+        <input matInput placeholder="Nome" formControlName="nome">
+        <mat-error *ngIf="f['nome'].errors && f['nome'].touched && f['nome'].errors['required']">
+            O nome é <strong>Obrigatório</strong>
+        </mat-error>
+        <mat-error *ngIf="f['nome'].errors && f['nome'].touched && f['nome'].errors['maxlength']">
+            Quantidade maior que 50 caracteres
+        </mat-error>
+        <mat-error *ngIf="f['nome'].errors && f['nome'].touched && f['nome'].errors['minlength']">
+            Quantidade menor que 3 caracteres  
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="E-mail" formControlName="email">
+        <mat-error *ngIf="f['email'].errors && f['email'].touched && f['email'].errors['required']">
+            O Email é <strong>Obrigatório</strong>
+        </mat-error>
+        <mat-error *ngIf="f['email'].errors && f['email'].touched && f['email'].errors['email']">
+            Insira um Email válido 
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Senha" formControlName="senha">
+        <mat-error *ngIf="f['senha'].errors && f['senha'].touched && f['senha'].errors['required']">
+            A senha é <strong>Obrigatória</strong>
+        </mat-error>
+        <mat-error *ngIf="f['senha'].errors && f['senha'].touched && f['senha'].errors['maxlength']">
+            Quantidade maior que 20 caracteres
+        </mat-error>
+        <mat-error *ngIf="f['senha'].errors && f['senha'].touched && f['senha'].errors['minlength']">
+            Quantidade menor que 6 caracteres 
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Confirmar senha" formControlName="confirmacao">
+        <mat-error *ngIf="f['confirmacao'].errors && f['confirmacao'].touched && f['confirmacao'].errors['required']">
+            A confirmação é <strong>Obrigatória</strong>
+        </mat-error>
+        <mat-error *ngIf="f['confirmacao'].errors && f['confirmacao'].touched && f['confirmacao'].errors['matching']">
+            A confirmação deve ser igual a senha
+        </mat-error>
+    </mat-form-field>
+
+</form>
+
+<button mat-raised-button color="primary" [disabled]="!this.form.valid" (click)="onSubmit()"> 
+    {{ btnText }} 
+</button>
+
+<button mat-raised-button (click)="onCancel()">Cancelar</button>
