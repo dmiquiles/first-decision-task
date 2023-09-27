@@ -8,26 +8,28 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Data
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
 public class Usuario {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
     @Column(length = 51, nullable = false)
-    String nome;
+    private String nome;
     
     @Column(nullable = false)
-    String email;
+    private String email;
 
     @Column(length = 21, nullable = false)
-    String senha;
+    private String senha;
     
     public Usuario(String nome, String email, String senha) {
         this.nome = nome;
