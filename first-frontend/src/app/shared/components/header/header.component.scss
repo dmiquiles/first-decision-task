@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 200px;
+}
+
+img {
+    max-height: 32px;
+}
+
+.nome {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.nome i {
+    margin-right: 15px;
+}
