@@ -2,3 +2,28 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mdc-list-item__primary-text {
+    color: #fff!important;
+}
+
+.v-middle {
+    vertical-align: middle;
+}
+
+.red {
+    color: red;
+}
+
+.content {
+    padding: 20px;
+}
+
+.msg-success{
+    background-color: #28a745;
+    color: #fff;
+}
+.msg-error{
+    background-color: #ff0000;
+    color: #fff;
+}
