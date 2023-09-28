@@ -1,5 +1,6 @@
 package daniel.miquiles.desafiofirstdecisionbackend.Dto;
 
+import lombok.Setter;
 import org.hibernate.validator.constraints.Length;
 
 import daniel.miquiles.desafiofirstdecisionbackend.Models.Usuario;
@@ -11,6 +12,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class UsuarioRequestDTO {
